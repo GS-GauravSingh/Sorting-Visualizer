@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+		<!-- Title -->
+		<title>Sorting Visualizer</title>
+
+		<!-- Links -->
+		<link rel="stylesheet" href="CSS/style.css" />
+		<link rel="icon" href="Images/favicon.svg" type="image/svg+xml" />
+	</head>
+
+	<body>
+		<main class="parent-container">
+			<!-- Array Container -->
+			<div class="array-container">
+				<!-- Array Elements Container -->
+				<div class="array-elements-container">
+					<!-- Actual Array Elements -->
+				</div>
+			</div>
+
+			<!-- Algorithms Container  -->
+			<div class="algorithms-container">
+				<div class="algo-buttons-container">
+					<button class="algo-buttons" id="bubbleSort">Bubble Sort</button>
+					<button class="algo-buttons" id="selectionSort">Selection Sort</button>
+					<button class="algo-buttons" id="insertionSort">Insertion Sort</button>
+					<button class="algo-buttons" id="quickSort">Quick Sort</button>
+					<button class="algo-buttons" id="mergeSort">Merge Sort</button>
+					<button class="algo-buttons" id="heapSort">Heap Sort</button>
+				</div>
+
+				<div class="sort-button-container">
+					<button class="sort-button">Sort</button>
+				</div>
+			</div>
+
+			<!-- Warning Element -->
+			<h4 class="warning"></h4>
+
+			<!-- Controls Container  -->
+			<div class="controls-container">
+				<!-- Randomize Array Button -->
+				<div class="randomize-btn-container">
+					<button class="randomize-button">Randomize</button>
+				</div>
+
+				<!-- Array Size an Sorting Speed Container -->
+				<div class="array-size-and-sorting-speed-container">
+					<div class="array-size-container">
+						<label for="arraySize">Array Size</label>
+						<input
+							type="range"
+							name="ArraySize"
+							id="arraySize"
+							autocomplete="off"
+							class="input-range"
+							value="20"
+							min="4"
+							max="50"
+							step="1"
+						/>
+					</div>
+
+					<div class="speed-control-container">
+						<label for="speedOfSorting">Speed</label>
+						<input
+							type="range"
+							name="SpeedOfSorting"
+							id="speedOfSorting"
+							autocomplete="off"
+							class="input-range"
+							value="10"
+							min="10"
+							max="600"
+							step="10"							
+						/>
+					</div>
+				</div>
+			</div>
+		</main>
+	</body>
+
+	<!-- JavaScript -->
+	<script src="JavaScript/script.js"></script>
+	<script src="JavaScript/BubbleSort.js"></script>
+	<script src="JavaScript/SelectionSort.js"></script>
+	<script src="JavaScript/InsertionSort.js"></script>
+	<script src="JavaScript/QuickSort.js"></script>
+	<script src="JavaScript/MergeSort.js"></script>
+	<script src="JavaScript/HeapSort.js"></script>
+</html>
